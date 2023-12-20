@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý điểm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,400;12..96,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+</head>
+<body>
+    <div class="full-web">
+        <div class="header">
+            <div class="home-btn item-header"><a href="/student.html" class="link-home"><img src="./assets/image/home_icon.png" alt="">Trang chủ</a></div>
+            <div class="user-btn item-header">
+                <a href="#" class="link-user">
+                    <span class="infor-user" id="js-infor-user"></span>
+                    <img src="./assets/image/user_icon.png" alt="">
+                </a>
+                <div class="logout-area">Đăng xuất<img src="/assets/image/logout_icon.png" alt=""></div>
+            </div>
+        </div>
+        <div class="containter">
+            <div class="student-event">
+                <div class="box-center" id="res-sub">
+                    <div class="content-box">
+                        <img src="./assets/image/res-sub-icon.png" alt="" class="icon-event">
+                        <p class="title-event">Đăng ký môn học</p>
+                        <img src="./assets/image/open_event.png" alt="" class="open-event">
+                    </div>
+                </div>
+                <div class="box-center" id="watch-point">
+                    <div class="content-box">
+                        <img src="./assets/image/watch-icon.png" alt="" class="icon-event">
+                        <p class="title-event">Xem điểm</p>
+                        <img src="./assets/image/open_event.png" alt="" class="open-event">
+                    </div>
+                </div>
+            </div>
+            <div id="register-subject" class="register-subject" style="display: none;">
+                <form action="" class="box-list sub-list" name="sub-list">
+                    <select name="sub" class="list-choose" id="sub">
+                        <option class="item-list title-list" id="sub0" value="sub0" selected>Lựa chọn môn học</option>
+                        <option class="item-list" id="sub1" value="sub1">Test sub 1</option>
+                        <option class="item-list" id="sub2" value="sub2">Test sub 2</option>
+                        <option class="item-list" id="sub3" value="sub3">Test sub 3</option>
+                    </select>
+                </form>
+                <table id="table-res-sub" class="mgn-point" style="text-align: center;display: none;">
+                    <thead class="mgn-head">
+                        <tr>
+                            <th class="mgn-head-title">STT</th>
+                            <th class="mgn-head-title">Môn học</th>
+                            <th class="mgn-head-title">Lớp</th>
+                            <th class="mgn-head-title">Thời gian</th>
+                            <th class="mgn-head-title">Chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mgn-body">
+                        <tr class="row-body">
+                            <td class="mgn-content">00</td>
+                            <td class="mgn-content">Test name std 1</td>
+                            <td class="mgn-content">0000000000</td>
+                            <td class="mgn-content">10</td>
+                            <td class="mgn-content"><input type="checkbox" name="" class="choose-std" id=""></td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"><input type="checkbox" name="" class="choose-std" id=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="save-res-sub">
+                    <button style="float:right; width: 20%;" class="commom-btn">LƯU</button>
+                </div>
+            </div>
+            <div id="table-point" class="table-point" style="display: none;">
+                <table class="mgn-point" style="text-align: center;">
+                    <thead class="mgn-head">
+                        <tr>
+                            <th class="mgn-head-title">STT</th>
+                            <th class="mgn-head-title">Môn học</th>
+                            <th class="mgn-head-title">Điểm quá trình</th>
+                            <th class="mgn-head-title">Điểm thi</th>
+                            <th class="mgn-head-title">Điểm tổng kết</th>
+                            <th class="mgn-head-title">Xếp loại</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mgn-body">
+                        <tr class="row-body">
+                            <td class="mgn-content">1</td>
+                            <td class="mgn-content">Môn F</td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content">F</td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content">A</td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content">F</td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content">F</td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content"></td>
+                            <td class="mgn-content">F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/js/logic.js"></script>
+    <script src="/assets/js/student.js"></script>
+</body>
+</html>
