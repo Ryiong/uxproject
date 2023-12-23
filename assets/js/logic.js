@@ -32,3 +32,8 @@ for (let tableItem of tableItems) {
     if (tableItem.innerText === 'F') {
         tableItem.style.color = 'red'; tableItem.style.fontWeight = 'bold'
     }}
+// Đăng xuất
+const logOut = document.querySelector('.logout-area')
+logOut.addEventListener('click', function() {
+    location.href='index.html'
+})

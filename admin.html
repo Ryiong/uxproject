@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,400;12..96,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+</head>
+<body>
+    <div class="full-web">
+        <div class="header">
+            <div class="home-btn item-header"><a href="admin.html" class="link-home"><img src="./assets/image/home_icon.png" alt="">Trang chủ</a></div>
+            <div class="user-btn item-header">
+                <a href="#" class="link-user">
+                    <span class="infor-user" id="js-infor-user"></span>
+                    <img src="./assets/image/user_icon.png" alt="">
+                </a>
+                <div class="logout-area">Đăng xuất<img src="/assets/image/logout_icon.png" alt=""></div>
+            </div>
+        </div>
+        <div class="containter">
+            <div class="admin-event">
+                <button id="jsadmin" class="commom-btn">Admin</button>
+                <button id="jsteacher" class="commom-btn">Giảng viên</button>
+                <button id="jsstudent" class="commom-btn">Sinh viên</button>
+            </div>
+            <div id="admin-table" class="hide">
+                <table class="mgn-point">
+                    <thead class="mgn-head">
+                        <tr>
+                            <th class="mgn-head-title">STT</th>
+                            <th class="mgn-head-title">Họ tên</th>
+                            <th class="mgn-head-title">Tên đăng nhập</th>
+                            <th class="mgn-head-title">Mật khẩu</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mgn-body">
+                        <tr class="row-body">
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="admin-save" class="commom-btn">Lưu</button>
+            </div>
+            <div id="teacher-table" class="hide">
+                <table class="mgn-point">
+                    <thead class="mgn-head">
+                        <tr>
+                            <th class="mgn-head-title">STT</th>
+                            <th class="mgn-head-title">Họ tên</th>
+                            <th class="mgn-head-title">Mã giảng viên</th>
+                            <th class="mgn-head-title">Mật khẩu</th>
+                            <th class="mgn-head-title">Sửa/Lưu</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mgn-body">
+                        <tr class="row-body">
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="teacher-save" class="commom-btn">Lưu</button>
+            </div>
+            <div id="student-table" class="hide">
+                <table class="mgn-point">
+                    <thead class="mgn-head">
+                        <tr>
+                            <th class="mgn-head-title">STT</th>
+                            <th class="mgn-head-title">Họ tên</th>
+                            <th class="mgn-head-title">Mã sinh viên</th>
+                            <th class="mgn-head-title">Mật khẩu</th>
+                            <th class="mgn-head-title">Khoa</th>
+                            <th class="mgn-head-title">Lớp</th>
+                            <th class="mgn-head-title">Sửa/Lưu</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mgn-body">
+                        <tr class="row-body">
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                        </tr>
+                        <tr class="row-body">
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                            <td class="mgn-content"><input type="text" placeholder="Nhập..." class="input-point"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="student-save" class="commom-btn">Lưu</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/js/logic.js"></script>
+    <script src="/assets/js/admin.js"></script>
+</body>
+</html>

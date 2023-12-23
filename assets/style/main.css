@@ -7,6 +7,9 @@ body {
 .containter,.header {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
+.hide {
+    display: none !important;
+}
 .full-web {
     width: 100vw;
     height: 100vh;
@@ -288,6 +291,13 @@ img.open-event {
 }
 .save-res-sub {
     margin-top: 20px;
+}
+.admin-event {
+    display: flex;
+}
+#teacher-save,#student-save,#admin-save {
+    margin-top: 20px;
+    float: right;
 }
 @keyframes hover-event {
     0% {margin-top: 50px; opacity: 0;}
