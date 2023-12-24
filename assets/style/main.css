@@ -299,6 +299,9 @@ img.open-event {
     margin-top: 20px;
     float: right;
 }
+.delete-btn {
+    float: right;
+}
 @keyframes hover-event {
     0% {margin-top: 50px; opacity: 0;}
     20% {opacity: 1;}
