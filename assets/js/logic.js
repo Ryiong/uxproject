@@ -37,3 +37,5 @@ const logOut = document.querySelector('.logout-area')
 logOut.addEventListener('click', function() {
     location.href='index.html'
 })
+
+if (location.href == 'http://localhost:8080/login?error') {document.getElementById('titlelogin').innerHTML = 'Lỗi'}
